@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="profile.html">Profil</a>
+        <a href="about-me.html">Tentang Saya</a>
+        <a href="educations.html">Pendidikan</a>
+        <a href="course-schedule.html">Jadwal Kuliah</a>
+        <a href="hobbies.html">Hobi</a>
+        <a href="form.html">Formulir</a>
+        <a href="table1.html">Tabel 1</a>
+        <a href="table2.html">Tabel 2</a>
+    </nav>
+
+    <h1>Formulir Pendaftaran Mahasiswa</h1>
+
+    <section class="target-belajar">
+        <form action="#" method="post">
+
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama"
+                   placeholder="Masukkan nama lengkap" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Masukkan email" required>
+
+    
+
+            <label for="umur">Umur</label>
+            <input type="number" id="umur" name="umur"
+                   min="1" placeholder="Masukkan umur">
+
+            <label for="tanggal">Tanggal Lahir</label>
+            <input type="date" id="tanggal" name="tanggal">
+
+            <p><strong>Jenis Kelamin</strong></p>
+            <label>
+                <input type="radio" name="gender" value="Laki-laki">
+                Laki-laki
+            </label>
+            <label>
+                <input type="radio" name="gender" value="Perempuan">
+                Perempuan
+            </label>
+
+            <p><strong>Hobi</strong></p>
+            <label>
+                <input type="checkbox" name="hobi" value="Membaca">
+                Membaca
+            </label>
+            <label>
+                <input type="checkbox" name="hobi" value="Olahraga">
+                Olahraga
+            </label>
+            <label>
+                <input type="checkbox" name="hobi" value="Fotografi">
+                Fotografi
+            </label>
+            <label>
+                <input type="checkbox" name="hobi" value="Bermain game">
+                Bermain game
+            </label>
+
+            <label for="prodi">Program Studi</label>
+            <select id="prodi" name="prodi" required>
+                <option value="">-- Pilih Program Studi --</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value=" Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
+            </select>
+
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" rows="4"
+                      placeholder="Masukkan alamat"></textarea>
+
+            <label for="foto">Upload Foto</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website"
+                   placeholder="https://contoh.com">
+
+            <button type="submit">Daftar</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
